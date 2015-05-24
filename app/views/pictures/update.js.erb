@@ -1,0 +1,7 @@
+$.fancybox.close()
+img = $("<img/>").attr({src: "<%= @picture.image.normal.url %>"})
+$("#picture-key").val("<%= @picture.unique_key %>")
+$("#new-advertisement").addClass("load-image")
+$previewImageBox = $(".preview-image-box")
+$previewImageBox .find($("img")).remove()
+$previewImageBox .prepend(img)

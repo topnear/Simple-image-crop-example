@@ -1,0 +1,13 @@
+/*
+ *= require_self
+ *= require fancybox
+ *= require jquery.Jcrop
+ *= require_tree .
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	padding-top: 70px;
+	color: #5A5A5A;
+ }

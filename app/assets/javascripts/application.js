@@ -1,0 +1,15 @@
+//= require jquery
+//= require jquery_ujs
+//= turbolinks
+//= require jquery-ui/widget
+//= require bootstrap
+//= require jquery-fileupload/jquery.iframe-transport
+//= require jquery-fileupload/jquery.fileupload
+//= require jquery-fileupload/jquery.fileupload-process
+//= require jquery-fileupload/jquery.fileupload-validate
+//= require fancybox
+//= require jquery.Jcrop
+//= require masonry.min
+//= require imagesloaded.min
+//= require form
+//= require index

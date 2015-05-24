@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post ads</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle collapsed">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<%= link_to "Crop image example", root_path, class: "navbar-brand" %>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="<%= is_active?(root_path) %>">
+					<%= link_to "Home", root_path %>
+				</li>
+				<li class="<%= is_active?(new_ad_path) %>">
+					<%= link_to "Post Ads", new_ad_path %>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<%= yield %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<%= form_for @ad, url: ads_path, html:{id: "new-advertisement"} do |f| %>
+	<%= f.hidden_field :picture_key, id: "picture-key" %>
+
+	<div class="form-group">
+		<%= f.text_field :title, class: "form-control input-lg",  placeholder: "Enter advertisement title" %>
+	</div>
+
+	<div class="form-group">
+		<div class="preview-image-wrapper">
+
+			<div class="preview-image-box">
+				<% if @ad.picture%>
+					<%= image_tag @ad.picture.image.normal.url %>
+				<% else  %>
+					<div class="preview-image-text">
+						<span>Upload your  image(within 1MB) </span>
+						800 X 400
+					</div>					
+				<% end %>
+			</div>
+
+			<div class="btn btn-primary btn-block btn-uploader">
+				<input type="file" id="image-uploader">
+				select image
+			</div>		
+
+			<div class="states loading">
+				<span class="btn btn-loading btn-block disabled">
+					<%= image_tag "loader.gif" %>
+					Uploading
+				</span>
+			</div>
+						
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.text_area :description, class: "form-control", rows: 8, placeholder:"Enter advertisement description" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.button "Store data", class: "btn btn-success form-control" %>
+	</div>
+<% end %>		

@@ -1,0 +1,31 @@
+.states {
+	display: none;
+}
+
+.is-loading {
+	.preview-image-wrapper {
+		.btn-uploader {
+			display: none;
+		}
+		.loading {
+			display: block;
+		}
+	}
+}	
+
+.show-error {
+	&#alert-client {
+		display: block;
+	}
+}
+
+.btn-loading {
+	background-color: #eeeeee;
+	border-color: #cccccc;
+}
+
+.load-image {
+	.preview-image-text {
+		display: none;
+	}
+}
