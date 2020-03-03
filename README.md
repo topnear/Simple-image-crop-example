@@ -13,8 +13,3 @@ crop image easily with preview box
 - [jcrop-rails-v2](https://github.com/maxd/jcrop-rails-v2)
 - [fancybox2-rails](https://github.com/kyparn/fancybox2-rails)
 - [jquery-fileupload-rails](https://github.com/tors/jquery-fileupload-rails)
-
-## TODO
-- Test
-- Background processing
-- Drag & Drop
