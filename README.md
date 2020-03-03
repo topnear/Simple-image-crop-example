@@ -15,6 +15,3 @@ crop image easily with preview box
 - [jquery-fileupload-rails](https://github.com/tors/jquery-fileupload-rails)
 
 ## TODO
-- Test
-- Background processing
-- Drag & Drop
